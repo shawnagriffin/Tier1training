@@ -1,0 +1,37 @@
+function createGradedCheckboxQuestionWithAutofeedback() {
+  // Make sure the form is a quiz.
+  var form = FormApp.create("Quiz");
+  form.setIsQuiz(true);
+
+  // Make a 10 point question and set up the question
+  var item = form.addCheckboxItem();
+  item.setTitle("What flavors are in neapolitan ice cream?");
+  item.setPoints(10);
+  
+  // chocolate, vanilla, & strawberry are the correct answers
+  item.setChoices([
+    item.createChoice("chocolate", true),
+    item.createChoice("vanilla", true),
+    item.createChoice("rum raisin", false),
+    item.createChoice("strawberry", true),
+    item.createChoice("mint", false)
+  ]);
+  
+  // If the respondent answers correctly, 
+  // they'll see this feedback when they viewscores.
+  var correctFeedback = FormApp.createFeedback()
+      .setText("You're an ice cream expert!")
+      .build();
+  item.setFeedbackForCorrect(correctFeedback);
+  
+  // If they respond incorrectly, they'll see this feedback with 
+  // helpful link to read more about ice cream.
+  var incorrectFeedback = FormApp.createFeedback()
+      .setText("Sorry, wrong answer")
+      .addLink(
+        "https://en.wikipedia.org/wiki/Neapolitan_ice_cream",
+        "Read more")
+      .build();
+  item.setFeedbackForIncorrect(incorrectFeedback);
+}
+//Adapted from: https://gsuite-developers.googleblog.com/2017/04/create-quizzes-in-google-forms-with.html
