@@ -1,0 +1,277 @@
+#COMMAND PROMPT - USER IS ON AD OR DOMAIN
+C:\Users\shawnagriffin>set user
+USERDNSDOMAIN=WATCHGUARDVIDEO.LOCAL
+USERDOMAIN=WATCHGUARDVIDEO
+USERDOMAIN_ROAMINGPROFILE=WATCHGUARDVIDEO
+USERNAME=shawnagriffin
+USERPROFILE=C:\Users\shawnagriffin
+
+#COMMAND PROMPT - VERIFY MACHINE FIREWALL IS ON (CLIENT OR SERVER)
+netsh advfirewall show allprofiles state
+C:\Users\shawnagriffin>netsh advfirewall show allprofiles state
+
+Domain Profile Settings:
+----------------------------------------------------------------------
+State                                 ON
+
+Private Profile Settings:
+----------------------------------------------------------------------
+State                                 ON
+
+Public Profile Settings:
+----------------------------------------------------------------------
+State                                 ON
+Ok.
+
+#CHECK FIREWALL ON REMOTE COMPUTER 
+Step 2: For a remote PC
+psexec \\<PC> -u <domain\username> netsh advfirewall show allprofiles state
+
+You will be prompted to enter the password for the username in the above command. 
+You can get around this by entering -p <password> just after the username. 
+I don't do this unless it's part of a batch script as I don't want the Admin password 
+in plain view if people peek over my shoulder.
+**If you are attempting to check a remote PC, PSExec may be blocked by the firewall on the remote PC**
+
+#CHECK ANTIVIRUS ON SERVER OR LOCAL MACHINE
+You can determine the antivirus software present on a system, 
+if the antivirus software is registered with the Windows Security Center,
+using Windows Management Instrumentation Command-line (WMIC). E.g., for a Windows 10 system using Microsoft Windows Defender:
+C:\Users\shawnagriffin>WMIC /Node:localhost /Namespace:\\root\SecurityCenter2 Path AntivirusProduct Get DisplayName
+displayName
+Windows Defender
+Webroot SecureAnywhere
+
+#ADDITIONAL INFORMATION BY -OMITING GET DISPLAY NAME
+C:\Users\shawnagriffin>WMIC /Node:localhost /Namespace:\\root\SecurityCenter2 Path AntivirusProduct
+displayName             instanceGuid                            pathToSignedProductExe             pathToSignedReportingExe                     productState  timestamp
+Windows Defender        {D68DDC3A-831F-4fae-9E44-DA132C1ACF46}  windowsdefender://                 %ProgramFiles%\Windows Defender\MsMpeng.exe  393472        Fri, 18 Oct 2019 13:39:18 GMT
+Webroot SecureAnywhere  {DF901FA1-F926-253B-C464-B01C79DCAD48}  C:\Program Files\Webroot\WRSA.exe  C:\Program Files\Webroot\WRSA.exe            266240        Wed, 08 Jan 2020 11:20:19 GMT
+
+#TO MAKE IT MORE READABLE ADD GET*/VALUE AT TEH END 
+
+C:\Users\shawnagriffin>WMIC /Node:localhost /Namespace:\\root\SecurityCenter2 Path AntivirusProduct get * /value
+
+
+displayName=Windows Defender
+instanceGuid={D68DDC3A-831F-4fae-9E44-DA132C1ACF46}
+pathToSignedProductExe=windowsdefender://
+pathToSignedReportingExe=%ProgramFiles%\Windows Defender\MsMpeng.exe
+productState=393472
+timestamp=Fri, 18 Oct 2019 13:39:18 GMT
+
+
+displayName=Webroot SecureAnywhere
+instanceGuid={DF901FA1-F926-253B-C464-B01C79DCAD48}
+pathToSignedProductExe=C:\Program Files\Webroot\WRSA.exe
+pathToSignedReportingExe=C:\Program Files\Webroot\WRSA.exe
+productState=266240
+timestamp=Wed, 08 Jan 2020 11:20:19 GMT
+
+#VERIFY NETWORK SHARES
+C:\Users\shawnagriffin>net share
+
+Share name   Resource                        Remark
+
+-------------------------------------------------------------------------------
+C$           C:\                             Default share
+IPC$                                         Remote IPC
+print$       C:\Windows\system32\spool\drivers
+                                             Printer Drivers
+test$        C:\test
+ADMIN$       C:\Windows                      Remote Admin
+The command completed successfully.
+
+#COMMAND LINE TO SHOW THE FOLDER PERMISSIONS 
+
+C:\Users\wgtsservice>icacls c:\wgvstorage
+c:\wgvstorage BUILTIN\Administrators:(F)
+              BUILTIN\Administrators:(OI)(CI)(IO)(F)
+              NT AUTHORITY\SYSTEM:(F)
+              NT AUTHORITY\SYSTEM:(OI)(CI)(IO)(F)
+              BUILTIN\Users:(OI)(CI)(RX)
+              NT AUTHORITY\Authenticated Users:(M)
+              NT AUTHORITY\Authenticated Users:(OI)(CI)(IO)(M)
+
+Successfully processed 1 files; Failed processing 0 files
+
+C:\Users\wgtsservice>icacls c:\watchguardvideo\import
+c:\watchguardvideo\import NT AUTHORITY\Authenticated Users:(OI)(CI)(F)
+                          NT AUTHORITY\SYSTEM:(OI)(CI)(F)
+                          NT AUTHORITY\LOCAL SERVICE:(OI)(CI)(F)
+                          NT AUTHORITY\NETWORK SERVICE:(OI)(CI)(F)
+                          BUILTIN\Administrators:(OI)(CI)(F)
+                          BUILTIN\Users:(OI)(CI)(F)
+
+Successfully processed 1 files; Failed processing 0 files
+
+C:\Users\wgtsservice>icacls c:\watchguardvideo\export
+c:\watchguardvideo\export: The system cannot find the file specified.
+Successfully processed 0 files; Failed processing 1 files
+
+C:\Users\wgtsservice>icacls c:\watchguardvideo\exports
+c:\watchguardvideo\exports NT AUTHORITY\SYSTEM:(OI)(CI)(RX)
+                           WATCHGUARDVIDEO\WGTSSERVICE:(OI)(CI)(F)
+
+Successfully processed 1 files; Failed processing 0 files
+
+C:\Users\wgtsservice>icacls c:\wgvstorage\video
+c:\wgvstorage\video NT AUTHORITY\SYSTEM:(OI)(CI)(F)
+                    BUILTIN\Administrators:(OI)(CI)(F)
+
+Successfully processed 1 files; Failed processing 0 files
+
+C:\Users\wgtsservice>icacls c:\wgvstorage\case
+c:\wgvstorage\case WATCHGUARDVIDEO\CSTOWER01$:(OI)(CI)(F)
+                   NT AUTHORITY\SYSTEM:(OI)(CI)(F)
+                   BUILTIN\Users:(OI)(CI)(F)
+
+Successfully processed 1 files; Failed processing 0 files
+***Here is the list of the ICALS
+iCACLS inheritance settings:
+
+(OI)  —  object inherit;
+(CI)  —  container inherit;
+(IO)  —  inherit only;
+(NP)  —  don’t propagate inherit;
+(I)  — permission inherited from parent container.
+List of basic access permissions:
+
+D  —  delete access;
+F  —  full access;
+N  —  no access;
+M  —  modify access;
+RX  —  read and eXecute access;
+R  —  read-only access;
+W  —  write-only access.
+Detailed permissions:
+
+DE  —  delete;
+RC  —  read control;
+WDAC  —  write DAC;
+WO   — write owner;
+S  —  synchronize;
+AS  —  access system security;
+MA  —  maximum allowed permissions;
+GR  —  generic read;
+GW  —  generic write;
+GE  —  generic execute;
+GA  —  generic all;
+RD  —  read data/list directory;
+WD  —  write data/add file;
+AD  — append data/add subdirectory;
+REA  —  read extended attributes;
+WEA  —  write extended attributes;
+X  —  execute/traverse;
+DC  —  delete child;
+RA  —  read attributes;
+WA  —  write attributes.
+
+#VERIFY WHAT GROUPS AD USER NAME IS PART OF 
+C:\Users\shawnagriffin>net user /domain shawnagriffin
+The request will be processed at a domain controller for domain watchguardvideo.local.
+
+User name                    shawnagriffin
+Full Name                    Shawna Griffin
+Comment
+User's comment
+Country/region code          (null)
+Account active               Yes
+Account expires              Never
+
+Password last set            ‎12/‎13/‎2019 9:28:21 AM
+Password expires             ‎3/‎12/‎2020 9:28:21 AM
+Password changeable          ‎12/‎16/‎2019 9:28:21 AM
+Password required            Yes
+User may change password     Yes
+
+Workstations allowed         All
+Logon script                 SBS_LOGIN_SCRIPT.bat
+User profile
+Home directory
+Last logon                   ‎1/‎11/‎2020 8:29:44 AM
+
+Logon hours allowed          All
+
+Local Group Memberships      *ReportingGroup {030d1*ReportingGroup {04e60
+                             *ReportingGroup {4b82c*ReportingGroup {78e1c
+                             *ReportingGroup {d7a03*ReportingGroup {ed647
+                             *UserGroup {04e60df0-d*UserGroup {78e1ca13-4
+Global Group memberships     *415 Building         *Domain Users
+                             *Standard Internet Use*GPUsers
+                             *Tier 1 Support       *Tier 1 ELC
+                             *CRMUsers             *All
+The command completed successfully.
+
+#show folders in a directory
+c:\watchguardvideo\* /save aclfile /t
+
+#cmd for current user - to verify administrator
+whoami
+
+
+
+Host Name:                 CSTOWER01
+OS Name:                   Microsoft Windows 10 Pro
+OS Version:                10.0.18362 N/A Build 18362
+OS Manufacturer:           Microsoft Corporation
+OS Configuration:          Member Workstation
+OS Build Type:             Multiprocessor Free
+Registered Owner:          N/A
+Registered Organization:   N/A
+Product ID:                00330-80000-00000-AA950
+Original Install Date:     10/1/2019, 10:43:05
+System Boot Time:          12/12/2019, 17:39:41
+System Manufacturer:       Equus Computer Systems
+System Model:              Nobilis
+System Type:               x64-based PC
+Processor(s):              1 Processor(s) Installed.
+                           [01]: Intel64 Family 6 Model 37 Stepping 5 GenuineIntel ~1200 Mhz
+BIOS Version:              American Megatrends Inc. 1.2       , 12/2/2011
+Windows Directory:         C:\WINDOWS
+System Directory:          C:\WINDOWS\system32
+Boot Device:               \Device\HarddiskVolume1
+System Locale:             en-us;English (United States)
+Input Locale:              en-us;English (United States)
+Time Zone:                 (UTC-06:00) Central Time (US & Canada)
+Total Physical Memory:     8,055 MB
+Available Physical Memory: 1,840 MB
+Virtual Memory: Max Size:  13,344 MB
+Virtual Memory: Available: 3,579 MB
+Virtual Memory: In Use:    9,765 MB
+Page File Location(s):     C:\pagefile.sys
+Domain:                    watchguardvideo.local
+Logon Server:              \\AD01
+Hotfix(s):                 8 Hotfix(s) Installed.
+                           [01]: KB4533002
+                           [02]: KB4515383
+                           [03]: KB4516115
+                           [04]: KB4520390
+                           [05]: KB4521863
+                           [06]: KB4523786
+                           [07]: KB4524569
+                           [08]: KB4530684
+Network Card(s):           2 NIC(s) Installed.
+                           [01]: Intel(R) 82574L Gigabit Network Connection
+                                 Connection Name: Bottom-Agency LAN
+                                 DHCP Enabled:    No
+                                 IP address(es)
+                                 [01]: 172.17.60.210
+                           [02]: Intel(R) 82578DM Gigabit Network Connection
+                                 Connection Name: Top-Wireless
+                                 Status:          Media disconnected
+Hyper-V Requirements:      VM Monitor Mode Extensions: Yes
+                           Virtualization Enabled In Firmware: Yes
+                           Second Level Address Translation: Yes
+                           Data Execution Prevention Available: Yes
+
+C:\Users\wgtsservice>wmic qfe list
+Caption                                     CSName     Description      FixComments  HotFixID   InstallDate  InstalledBy          InstalledOn  Name  ServicePackInEffect  Status
+http://support.microsoft.com/?kbid=4533002  CSTOWER01  Update                        KB4533002               NT AUTHORITY\SYSTEM  12/12/2019
+http://support.microsoft.com/?kbid=4515383  CSTOWER01  Security Update               KB4515383               NT AUTHORITY\SYSTEM  10/1/2019
+http://support.microsoft.com/?kbid=4516115  CSTOWER01  Security Update               KB4516115               NT AUTHORITY\SYSTEM  10/2/2019
+http://support.microsoft.com/?kbid=4520390  CSTOWER01  Security Update               KB4520390               NT AUTHORITY\SYSTEM  10/3/2019
+http://support.microsoft.com/?kbid=4521863  CSTOWER01  Security Update               KB4521863               NT AUTHORITY\SYSTEM  10/9/2019
+http://support.microsoft.com/?kbid=4523786  CSTOWER01  Update                        KB4523786               NT AUTHORITY\SYSTEM  10/24/2019
+http://support.microsoft.com/?kbid=4524569  CSTOWER01  Security Update               KB4524569               NT AUTHORITY\SYSTEM  11/14/2019
+http://support.microsoft.com/?kbid=4530684  CSTOWER01  Update                        KB4530684               NT AUTHORITY\SYSTEM  12/11/2019
