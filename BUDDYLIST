@@ -1,0 +1,45 @@
+#COMMAND PROMPT - USER IS ON AD OR DOMAIN
+set user
+C:\Users\shawnagriffin>set user
+
+#COMMAND PROMPT - VERIFY MACHINE FIREWALL IS ON (CLIENT OR SERVER)
+netsh advfirewall show allprofiles state
+C:\Users\shawnagriffin>netsh advfirewall show allprofiles state
+
+#CHECK FIREWALL ON REMOTE COMPUTER 
+Step 2: For a remote PC
+psexec \\<PC> -u <domain\username> netsh advfirewall show allprofiles state 
+ -p <password>
+
+#CHECK ANTIVIRUS ON SERVER OR LOCAL MACHINE
+WMIC /Node:localhost /Namespace:\\root\SecurityCenter2 Path AntivirusProduct Get DisplayName
+
+#ADDITIONAL INFORMATION BY -OMITING GET DISPLAY NAME
+WMIC /Node:localhost /Namespace:\\root\SecurityCenter2 Path AntivirusProduct
+
+#TO MAKE IT MORE READABLE ADD GET*/VALUE AT TEH END 
+WMIC /Node:localhost /Namespace:\\root\SecurityCenter2 Path AntivirusProduct get * /value
+
+#VERIFY NETWORK SHARES
+C:\Users\shawnagriffin>net share
+
+#COMMAND LINE TO SHOW THE FOLDER PERMISSIONS 
+icacls c:\wgvstorage
+C:\Users\wgtsservice>icacls c:\watchguardvideo\import
+C:\Users\wgtsservice>icacls c:\watchguardvideo\export
+C:\Users\wgtsservice>icacls c:\wgvstorage\video
+
+#VERIFY WHAT GROUPS AD USER NAME IS PART OF 
+C:\Users\shawnagriffin>net user /domain shawnagriffin
+
+#SHOW FOLDERS IN A DIRECTORY
+c:\watchguardvideo\* /save aclfile /t
+
+#VERIFY CURRENT USER
+whoami
+
+#COMMAND PROMPT ABOUT THE SYSTEM AND LAST UPDATES
+SYSTEMINFOR.EXE
+
+#WINDOWS UPDATE HISTORY
+C:\Users\wgtsservice>wmic qfe list
