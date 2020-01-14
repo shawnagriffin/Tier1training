@@ -1,0 +1,71 @@
+2019-07-03 22:16:12,265 ERROR [104][NT AUTHORITY\SYSTEM] Logger: StorageAccountant: Error while determining storage status for 00:00:00:00:46:21-74806077
+System.IO.IOException: The semaphore timeout period has expired.
+
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileSystemEnumerableIterator`1.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.IO.DirectoryInfo.InternalGetFiles(String searchPattern, SearchOption searchOption)
+   at System.Linq.Enumerable.<SelectManyIterator>d__17`2.MoveNext()
+   at System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   at WatchGuard.Services.ImportActivity.Services.StorageAccountant.WatchGuard.Services.ImportActivity.Services.IStorageAccountant.ReconcileReceivables(ImportContext ctx)
+2019-07-03 22:16:12,265 TRACE [104][NT AUTHORITY\SYSTEM] ImportCodeActivity: Activity executing for WorkFlow: 04e083c8-9e4f-42c8-8741-365eea9f9c71 Reid: 00:00:00:00:46:21-74806077
+2019-07-03 22:16:12,266 ERROR [198][NT AUTHORITY\SYSTEM] Logger: StorageAccountant: Error while determining storage status for 00:00:00:00:46:21-74806078
+System.IO.IOException: The semaphore timeout period has expired.
+
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileSystemEnumerableIterator`1.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.IO.DirectoryInfo.InternalGetFiles(String searchPattern, SearchOption searchOption)
+   at System.Linq.Enumerable.<SelectManyIterator>d__17`2.MoveNext()
+   at System.Linq.Buffer`1..ctor(IEnumerable`1 source)
+   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   at WatchGuard.Services.ImportActivity.Services.StorageAccountant.WatchGuard.Services.ImportActivity.Services.IStorageAccountant.ReconcileReceivables(ImportContext ctx)
+
+
+
+
+254 items
+
+
+
+2019-07-03 23:25:13,258 ERROR [83][NT AUTHORITY\SYSTEM] FileTransferController: Local file copy to file://pcsowg01/video.storagex$/e830e66f53c64e228e95646ea420520d/tick76400784-tick76401205.mtd failed.
+System.IO.IOException: An unexpected network error occurred.
+
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.get_Length()
+   at WatchGuard.FileTransfer.TransferControllers.FileTransferController.<ExecuteAsync>d__1.MoveNext()
+2019-07-03 23:25:13,258 ERROR [99][NT AUTHORITY\SYSTEM] FileTransferController: Local file copy to file://pcsowg01/video.storagex$/e6f33d5a526b4b848d5138315c42d2cd/tick69651423-tick69652474.mtd failed.
+System.IO.IOException: An unexpected network error occurred.
+
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.get_Length()
+   at WatchGuard.FileTransfer.TransferControllers.FileTransferController.<ExecuteAsync>d__1.MoveNext()
+2019-07-03 23:25:13,258 ERROR [113][NT AUTHORITY\SYSTEM] FileTransferController: Local file copy to file://pcsowg01/video.storagex$/0be6666aea88480d857aa292854e7b1a/tick76402023-tick76402491.xml failed.
+System.IO.IOException: An unexpected network error occurred.
+
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.get_Length()
+   at WatchGuard.FileTransfer.TransferControllers.FileTransferController.<ExecuteAsync>d__1.MoveNext()
+2019-07-03 23:25:13,259 WARN  [99][NT AUTHORITY\SYSTEM] MoveToStorageActivity: Failed to move the file tick69651423-tick69652474.mtd to storage: \\pcsowg01\video.storagex$\e6f33d5a526b4b848d5138315c42d2cd. Reason:
+System.Threading.Tasks.TaskCanceledException: A task was canceled.
+2019-07-03 23:25:13,260 WARN  [113][NT AUTHORITY\SYSTEM] MoveToStorageActivity: Failed to move the file tick76402023-tick76402491.xml to storage: \\pcsowg01\video.storagex$\0be6666aea88480d857aa292854e7b1a. Reason:
+System.Threading.Tasks.TaskCanceledException: A task was canceled.
+2019-07-03 23:25:13,259 WARN  [83][NT AUTHORITY\SYSTEM] MoveToStorageActivity: Failed to move the file tick76400784-tick76401205.mtd to storage: \\pcsowg01\video.storagex$\e830e66f53c64e228e95646ea420520d. Reason:
+System.Threading.Tasks.TaskCanceledException: A task was canceled.
+2019-07-03 23:25:13,258 ERROR [65][NT AUTHORITY\SYSTEM] FileTransferController: Local file copy to file://pcsowg01/video.storagex$/e6f33d5a526b4b848d5138315c42d2cd/tick69651423-tick69652474.xml failed.
+System.IO.IOException: An unexpected network error occurred.
+
+   at System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   at System.IO.FileStream.get_Length()
+   at WatchGuard.FileTransfer.TransferControllers.FileTransferController.<ExecuteAsync>d__1.MoveNext()
+2019-07-03 23:25:13,261 WARN  [65][NT AUTHORITY\SYSTEM] MoveToStorageActivity: Failed to move the file tick69651423-tick69652474.xml to storage: \\pcsowg01\video.storagex$\e6f33d5a526b4b848d5138315c42d2cd. Reason:
+System.Threading.Tasks.TaskCanceledException: A task was canceled.
+2019-07-03 23:25:13,313 DEBUG [51][NT AUTHORITY\SYSTEM] Logger: RECV(10.111.23.59:9047): FILE_NOT_AVAILABLE:00:1d:96:00:d4:a5-341400547, F:tick341469638-tick341470293-video2.ts
+2019-07-03 23:25:13,313 DEBUG [51][NT AUTHORITY\SYSTEM] Logger: IGetFileResolver.CallSlotCompleted: 2
+2019-07-03 23:25:13,332 DEBUG [43][NT AUTHORITY\SYSTEM] Logger: PROC(10.111.23.59:9047): FILE_NOT_AVAILABLE:00:1d:96:00:d4:a5-341400547, F:tick341469638-tick341470293-video2.ts
+2019-07-03 23:25:13,381 DEBUG [43][NT AUTHORITY\SYSTEM] Logger: GET_FILE has resolved to strategy: GetNextEventFileStrategy
+2019-07-03 23:25:13,381 DEBUG [43][NT AUTHORITY\SYSTEM] Logger: IGetFileResolver.WaitForCall: 2
+2019-07-03 23:25:13,390 DEBUG [43][NT AUTHORITY\SYSTEM] Logger: Write lock acquired.
+2019-07-03 23:25:13,390 DEBUG [43][NT AUTHORITY\SYSTEM] Logger: SEND(10.111.23.59:9047): GET_FILE:00:1d:96:00:d4:a5-341400547, P:bits://pcsowg01.polkdomain.co.polk.ia.us:9049/I-INT/00-1d-96-00-d4-a5-341400547, F:tick341470293-tick341470947-video2.ts.
+
