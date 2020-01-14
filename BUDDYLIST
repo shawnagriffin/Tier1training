@@ -43,3 +43,6 @@ SYSTEMINFOR.EXE
 
 #WINDOWS UPDATE HISTORY
 C:\Users\wgtsservice>wmic qfe list
+
+#SHOW SERIAL NUMBER OF SERVERS
+wmic bios get serialnumber
