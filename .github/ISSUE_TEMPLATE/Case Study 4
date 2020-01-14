@@ -1,1 +1,9 @@
+D:\Video Storage\WatchGuardVideo\6da400aaa1f347f5b62e7bca84f83a47
+00:1d:96:01:f2:15-97259378
 
+
+2019-12-27 00:16:49,499 INFO  [81][NT AUTHORITY\SYSTEM] Failed to locate the storage location via 'CrossReference' for event 'c3e7ab46-17e1-41d0-be51-bcc3a4406e24'. If the event has been archived, then this message can be safely ignored.
+2019-12-27 00:16:49,577 DEBUG [42][NT AUTHORITY\SYSTEM] The event 00:1d:96:01:f4:ae-222594 does not have any files in storage.
+2019-12-27 00:16:49,591 DEBUG [84][NT AUTHORITY\SYSTEM] The event 00:1d:96:01:f5:ac-231097 does not have any files in storage.
+2019-12-27 00:16:49,604 DEBUG [81][NT AUTHORITY\SYSTEM] The event 00:1d:96:01:f5:ac-231095 does not have any files in storage.
+2019-12-27 00:16:49,658 DEBUG [81][NT AUTHORITY\SYSTEM] The event 00:1d:96:01:f5:ac-230667 does not have any files in storage.
