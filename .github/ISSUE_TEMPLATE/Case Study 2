@@ -1,0 +1,4 @@
+2019-10-30 16:10:02,110 INFO  [36][NT AUTHORITY\SYSTEM][Logger]  Failed to copy the file to the destination. File: tick61269904-tick61269904.mtd, Reid: 00:00:00:00:04:4a-61269904.
+Reason:
+WatchGuard.Import.FileTransportException: File transfer failed. ---> System.AggregateException: One or more errors occurred. ---> System.Threading.Tasks.TaskCanceledException: A task was canceled.
+
