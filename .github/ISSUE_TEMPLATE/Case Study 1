@@ -1,0 +1,180 @@
+
+2019-12-05 15:19:07,975 [DEBUG : 66 : ExportCleanupWorker : NT AUTHORITY\SYSTEM] Removing Completed export job '44cf01b6-05c9-4a89-96ff-fb68a0cf8805:TRANSCODE_COMPLETE:fd529832-cc9c-4ec4-a3ed-7e5d7b5d4f47:651cd052acfb4164b154cb5b4a71d64c:watchguard' from path: NO PATH.
+2019-12-05 15:19:08,023 [INFO  : 88 : ExportWorker : NT AUTHORITY\SYSTEM] Starting worker fd529832-cc9c-4ec4-a3ed-7e5d7b5d4f47 ExportWorkflow TRANSCODE_COMPLETE.
+2019-12-05 15:19:08,027 [DEBUG : 88 : RepositoryExtensions : WATCHGUARD\WGV.NET] Updating UI status for export job 2019-11-05 Brown Traffic Stop (fd529832-cc9c-4ec4-a3ed-7e5d7b5d4f47) to Exporting. Job status: InProgress.
+2019-12-05 15:19:08,081 [DEBUG : 105 : ExportContext : NT AUTHORITY\SYSTEM] ExportContext.RequiredSize calculations: 1 export items of total 598470922 bytes, using transcode factor 3 with image factor 1.13, resulting in 2028816425.58 bytes, converting to 2028816426 bytes in a ulong
+2019-12-05 15:19:08,133 [DEBUG : 105 : CleanJobWorkspace : WATCHGUARD\WGV.NET] The item 651cd052-acfb-4164-b154-cb5b4a71d64c of job fd529832cc9c4ec4a3ed7e5d7b5d4f47 has completed file staging. The folder will be kept intact.
+2019-12-05 15:19:08,136 [DEBUG : 105 : StageExportItems : NT AUTHORITY\SYSTEM] Not re-staging item 651cd052-acfb-4164-b154-cb5b4a71d64c of job fd529832cc9c4ec4a3ed7e5d7b5d4f47.
+2019-12-05 15:19:08,145 [DEBUG : 105 : HydrateHashcodesForAudit : NT AUTHORITY\SYSTEM] The item 473 of job fd529832cc9c4ec4a3ed7e5d7b5d4f47 has already had hash code verification for audit performed.
+2019-12-05 15:19:08,146 [DEBUG : 105 : SpanningExegesis : NT AUTHORITY\SYSTEM] Checking for events that may require spanning.
+2019-12-05 15:19:13,248 [DEBUG : 105 : MediaFormatCapacity : NT AUTHORITY\SYSTEM] Media format enumeration Disk.
+2019-12-05 15:19:13,248 [INFO  : 105 : SpanningExegesis : NT AUTHORITY\SYSTEM] Spanning is not required for job fd529832cc9c4ec4a3ed7e5d7b5d4f47.
+2019-12-05 15:19:13,251 [DEBUG : 105 : CreateOverlayFiles : NT AUTHORITY\SYSTEM] Overlay file (ssa) has already been generated for 651cd052-acfb-4164-b154-cb5b4a71d64c of job fd529832cc9c4ec4a3ed7e5d7b5d4f47.
+2019-12-05 15:19:13,400 [DEBUG : 105 : BasicPlayerCopier : NT AUTHORITY\SYSTEM] Copying Basic Player to: \\watchguard\export$\fd529832cc9c4ec4a3ed7e5d7b5d4f47\0a50734b770146088265be8851a2f714
+2019-12-05 15:19:13,999 [DEBUG : 105 : HtmlAuditExporter : NT AUTHORITY\SYSTEM] Generating HTML audit for 0a50734b-7701-4608-8265-be8851a2f714.
+
+
+2019-12-05 12:32:03,366 [ERROR : DirectoryTransferController] Unable to delete location: /export$/153f45876938448393ea5b254c941789
+System.IO.IOException: The process cannot access the file 'tick25769486-tick25775476-video1.avi' because it is being used by another process.
+   at System.IO.Directory.DeleteHelper(String fullPath, String userPath, Boolean recursive, Boolean throwOnTopLevelDirectoryNotFound, WIN32_FIND_DATA& data)
+   at System.IO.Directory.Delete(String fullPath, String userPath, Boolean recursive, Boolean checkHost)
+   at WatchGuard.FileTransfer.TransferControllers.OnPremiseController.<>c__DisplayClass1_0.<DeleteAsync>b__0()
+2019-12-05 12:32:18,318 [INFO  : TranscodeResolver] TranscodeResolver worker resolver is already running at its maximum workload of 2 jobs.
+2019-12-05 12:32:18,365 [WARN  : Task] TaskScheduler.UnobservedTaskException: System.Threading.Tasks.Task. Message:
+A Task's exception(s) were not observed either by Waiting on the Task or accessing its Exception property. As a result, the unobserved exception was rethrown by the finalizer thread.
+Exception: 1
+System.IO.IOException: The process cannot access the file 'tick25769486-tick25775476-video1.avi' because it is being used by another process.
+   at System.IO.Directory.DeleteHelper(String fullPath, String userPath, Boolean recursive, Boolean throwOnTopLevelDirectoryNotFound, WIN32_FIND_DATA& data)
+   at System.IO.Directory.Delete(String fullPath, String userPath, Boolean recursive, Boolean checkHost)
+   at WatchGuard.FileTransfer.TransferControllers.OnPremiseController.<>c__DisplayClass1_0.<DeleteAsync>b__0()
+   at System.Threading.Tasks.Task.Execute()
+
+
+2019-12-05 12:32:03,366 [ERROR : DirectoryTransferController] Unable to delete location: /export$/153f45876938448393ea5b254c941789
+System.IO.IOException: The process cannot access the file 'tick25769486-tick25775476-video1.avi' because it is being used by another process.
+   at System.IO.Directory.DeleteHelper(String fullPath, String userPath, Boolean recursive, Boolean throwOnTopLevelDirectoryNotFound, WIN32_FIND_DATA& data)
+   at System.IO.Directory.Delete(String fullPath, String userPath, Boolean recursive, Boolean checkHost)
+   at WatchGuard.FileTransfer.TransferControllers.OnPremiseController.<>c__DisplayClass1_0.<DeleteAsync>b__0()
+2019-12-05 12:32:18,318 [INFO  : TranscodeResolver] TranscodeResolver worker resolver is already running at its maximum workload of 2 jobs.
+2019-12-05 12:32:18,365 [WARN  : Task] TaskScheduler.UnobservedTaskException: System.Threading.Tasks.Task. Message:
+A Task's exception(s) were not observed either by Waiting on the Task or accessing its Exception property. As a result, the unobserved exception was rethrown by the finalizer thread.
+Exception: 1
+System.IO.IOException: The process cannot access the file 'tick25769486-tick25775476-video1.avi' because it is being used by another process.
+   at System.IO.Directory.DeleteHelper(String fullPath, String userPath, Boolean recursive, Boolean throwOnTopLevelDirectoryNotFound, WIN32_FIND_DATA& data)
+   at System.IO.Directory.Delete(String fullPath, String userPath, Boolean recursive, Boolean checkHost)
+   at WatchGuard.FileTransfer.TransferControllers.OnPremiseController.<>c__DisplayClass1_0.<DeleteAsync>b__0()
+   at System.Threading.Tasks.Task.Execute()
+
+2019-12-05 12:32:18,412 [INFO  : MoveQueueWorker] Processing 1 event(s) for move/archive/purge.
+2019-12-05 12:32:18,521 [ERROR : MoveQueueWorker] No storage locations were found for the current request.
+2019-12-05 12:32:18,521 [WARN  : MoveQueueWorker] No storage location available on Tier '0' to archive event 00:1d:96:01:f4:4d-8633549.
+2019-12-05 12:32:18,568 [ERROR : DirectoryTransferController] Unable to delete location: /export$/153f45876938448393ea5b254c941789
+System.IO.IOException: The process cannot access the file 'tick25769486-tick25775476-video1.avi' because it is being used by another process.
+   at System.IO.Directory.DeleteHelper(String fullPath, String userPath, Boolean recursive, Boolean throwOnTopLevelDirectoryNotFound, WIN32_FIND_DATA& data)
+   at System.IO.Directory.Delete(String fullPath, String userPath, Boolean recursive, Boolean checkHost)
+   at WatchGuard.FileTransfer.TransferControllers.OnPremiseController.<>c__DisplayClass1_0.<DeleteAsync>b__0()
+2019-12-05 12:32:33,677 [INFO  : TranscodeResolver] TranscodeResolver worker resolver is already running at its maximum workload of 2 jobs.
+2019-12-05 12:32:33,739 [WARN  : Task] TaskScheduler.UnobservedTaskException: System.Threading.Tasks.Task. Message:
+A Task's exception(s) were not observed either by Waiting on the Task or accessing its Exception property. As a result, the unobserved exception was rethrown by the finalizer thread.
+Exception: 1
+System.IO.IOException: The process cannot access the file 'tick25769486-tick25775476-video1.avi' because it is being used by another process.
+   at System.IO.Directory.DeleteHelper(String fullPath, String userPath, Boolean recursive, Boolean throwOnTopLevelDirectoryNotFound, WIN32_FIND_DATA& data)
+   at System.IO.Directory.Delete(String fullPath, String userPath, Boolean recursive, Boolean checkHost)
+   at WatchGuard.FileTransfer.TransferControllers.OnPremiseController.<>c__DisplayClass1_0.<DeleteAsync>b__0()
+   at System.Threading.Tasks.Task.Execute()
+
+2019-12-05 12:32:33,771 [INFO  : MoveQueueWorker] Processing 1 event(s) for move/archive/purge.
+2019-12-05 12:32:33,880 [ERROR : MoveQueueWorker] No storage locations were found for the current request.
+2019-12-05 12:32:33,880 [WARN  : MoveQueueWorker] No storage location available on Tier '0' to archive event 00:1d:96:01:f4:4d-8633549.
+2019-12-05 12:32:33,896 [ERROR : DirectoryTransferController] Unable to delete location: /export$/153f45876938448393ea5b254c941789
+System.IO.IOException: The process cannot access the file 'tick25769486-tick25775476-video1.avi' because it is being used by another process.
+   at System.IO.Directory.DeleteHelper(String fullPath, String userPath, Boolean recursive, Boolean throwOnTopLevelDirectoryNotFound, WIN32_FIND_DATA& data)
+   at System.IO.Directory.Delete(String fullPath, String userPath, Boolean recursive, Boolean checkHost)
+   at WatchGuard.FileTransfer.TransferControllers.OnPremiseController.<>c__DisplayClass1_0.<DeleteAsync>b__0()
+2019-12-05 12:32:48,989 [INFO  : TranscodeResolver] TranscodeResolver worker resolver is already running at its maximum workload of 2 jobs.
+2019-12-05 12:32:49,082 [INFO  : MoveQueueWorker] Processing 1 event(s) for move/archive/purge.
+2019-12-05 12:32:49,176 [ERROR : MoveQueueWorker] No storage locations were found for the current request.
+2019-12-05 12:32:49,176 [WARN  : MoveQueueWorker] No storage location available on Tier '0' to archive event 00:1d:96:01:f4:4d-8633549.
+2019-12-05 12:32:49,192 [ERROR : DirectoryTransferController] Unable to delete location: /export$/153f45876938448393ea5b254c941789
+System.IO.IOException: The process cannot access the file 'tick25769486-tick25775476-video1.avi' because it is being used by another process.
+   at System.IO.Directory.DeleteHelper(String fullPath, String userPath, Boolean recursive, Boolean throwOnTopLevelDirectoryNotFound, WIN32_FIND_DATA& data)
+   at System.IO.Directory.Delete(String fullPath, String userPath, Boolean recursive, Boolean checkHost)
+   at WatchGuard.FileTransfer.TransferControllers.OnPremiseController.<>c__DisplayClass1_0.<DeleteAsync>b__0()
+2019-12-05 12:32:52,457 [WARN  : Task] TaskScheduler.UnobservedTaskException: System.Threading.Tasks.Task. Message:
+A Task's exception(s) were not observed either by Waiting on the Task or accessing its Exception property. As a result, the unobserved exception was rethrown by the finalizer thread.
+Exception: 1
+System.IO.IOException: The process cannot access the file 'tick25769486-tick25775476-video1.avi' because it is being used by another process.
+   at System.IO.Directory.DeleteHelper(String fullPath, String userPath, Boolean recursive, Boolean throwOnTopLevelDirectoryNotFound, WIN32_FIND_DATA& data)
+   at System.IO.Directory.Delete(String fullPath, String userPath, Boolean recursive, Boolean checkHost)
+   at WatchGuard.FileTransfer.TransferControllers.OnPremiseController.<>c__DisplayClass1_0.<DeleteAsync>b__0()
+   at System.Threading.Tasks.Task.Execute()
+
+2019-12-05 12:33:04,300 [INFO  : TranscodeResolver] TranscodeResolver worker resolver is already running at its maximum workload of 2 jobs.
+2019-12-05 12:33:04,394 [INFO  : MoveQueueWorker] Processing 1 event(s) for move/archive/purge.
+2019-12-05 12:33:04,504 [ERROR : MoveQueueWorker] No storage locations were found for the current request.
+2019-12-05 12:33:04,504 [WARN  : MoveQueueWorker] No storage location available on Tier '0' to archive event 00:1d:96:01:f4:4d-8633549.
+2019-12-05 12:33:04,550 [ERROR : DirectoryTransferController] Unable to delete location: /export$/153f45876938448393ea5b254c941789
+System.IO.IOException: The process cannot access the file 'tick25769486-tick25775476-video1.avi' because it is being used by another process.
+   at System.IO.Directory.DeleteHelper(String fullPath, String userPath, Boolean recursive, Boolean throwOnTopLevelDirectoryNotFound, WIN32_FIND_DATA& data)
+   at System.IO.Directory.Delete(String fullPath, String userPath, Boolean recursive, Boolean checkHost)
+   at WatchGuard.FileTransfer.TransferControllers.OnPremiseController.<>c__DisplayClass1_0.<DeleteAsync>b__0()
+2019-12-05 12:33:04,566 [WARN  : Task] TaskScheduler.UnobservedTaskException: System.Threading.Tasks.Task. Message:
+A Task's exception(s) were not observed either by Waiting on the Task or accessing its Exception property. As a result, the unobserved exception was rethrown by the finalizer thread.
+Exception: 1
+System.IO.IOException: The process cannot access the file 'tick25769486-tick25775476-video1.avi' because it is being used by another process.
+   at System.IO.Directory.DeleteHelper(String fullPath, String userPath, Boolean recursive, Boolean throwOnTopLevelDirectoryNotFound, WIN32_FIND_DATA& data)
+   at System.IO.Directory.Delete(String fullPath, String userPath, Boolean recursive, Boolean checkHost)
+   at WatchGuard.FileTransfer.TransferControllers.OnPremiseController.<>c__DisplayClass1_0.<DeleteAsync>b__0()
+   at System.Threading.Tasks.Task.Execute()
+
+2019-12-05 12:33:04,566 [INFO  : ExportWorker] Starting worker 7b83f021-f2cd-4f74-8cff-0c0082c25356 ExportWorkflow .
+2019-12-05 12:33:19,628 [INFO  : TranscodeResolver] TranscodeResolver worker resolver is already running at its maximum workload of 2 jobs.
+2019-12-05 12:33:19,722 [INFO  : MoveQueueWorker] Processing 1 event(s) for move/archive/purge.
+2019-12-05 12:33:19,768 [INFO  : ExportResolver] ExportResolver worker resolver is already running at its maximum workload of 2 jobs.
+2019-12-05 12:33:19,815 [WARN  : Task] TaskScheduler.UnobservedTaskException: System.Threading.Tasks.Task. Message:
+A Task's exception(s) were not observed either by Waiting on the Task or accessing its Exception property. As a result, the unobserved exception was rethrown by the finalizer thread.
+Exception: 1
+System.IO.IOException: The process cannot access the file 'tick25769486-tick25775476-video1.avi' because it is being used by another process.
+   at System.IO.Directory.DeleteHelper(String fullPath, String userPath, Boolean recursive, Boolean throwOnTopLevelDirectoryNotFound, WIN32_FIND_DATA& data)
+   at System.IO.Directory.Delete(String fullPath, String userPath, Boolean recursive, Boolean checkHost)
+   at WatchGuard.FileTransfer.TransferControllers.OnPremiseController.<>c__DisplayClass1_0.<DeleteAsync>b__0()
+   at System.Threading.Tasks.Task.Execute()
+
+2019-12-05 12:33:19,815 [ERROR : MoveQueueWorker] No storage locations were found for the current request.
+2019-12-05 12:33:19,815 [WARN  : MoveQueueWorker] No storage location available on Tier '0' to archive event 00:1d:96:01:f4:4d-8633549.
+2019-12-05 12:33:19,831 [ERROR : DirectoryTransferController] Unable to delete location: /export$/153f45876938448393ea5b254c941789
+System.IO.IOException: The process cannot access the file 'tick25769486-tick25775476-video1.avi' because it is being used by another process.
+   at System.IO.Directory.DeleteHelper(String fullPath, String userPath, Boolean recursive, Boolean throwOnTopLevelDirectoryNotFound, WIN32_FIND_DATA& data)
+   at System.IO.Directory.Delete(String fullPath, String userPath, Boolean recursive, Boolean checkHost)
+   at WatchGuard.FileTransfer.TransferControllers.OnPremiseController.<>c__DisplayClass1_0.<DeleteAsync>b__0()
+2019-12-05 12:33:31,018 [WARN  : Task] TaskScheduler.UnobservedTaskException: System.Threading.Tasks.Task. Message:
+A Task's exception(s) were not observed either by Waiting on the Task or accessing its Exception property. As a result, the unobserved exception was rethrown by the finalizer thread.
+Exception: 1
+System.IO.IOException: The process cannot access the file 'tick25769486-tick25775476-video1.avi' because it is being used by another process.
+   at System.IO.Directory.DeleteHelper(String fullPath, String userPath, Boolean recursive, Boolean throwOnTopLevelDirectoryNotFound, WIN32_FIND_DATA& data)
+   at System.IO.Directory.Delete(String fullPath, String userPath, Boolean recursive, Boolean checkHost)
+   at WatchGuard.FileTransfer.TransferControllers.OnPremiseController.<>c__DisplayClass1_0.<DeleteAsync>b__0()
+   at System.Threading.Tasks.Task.Execute()
+
+2019-12-05 12:33:34,908 [INFO  : TranscodeResolver] TranscodeResolver worker resolver is already running at its maximum workload of 2 jobs.
+2019-12-05 12:33:35,033 [INFO  : MoveQueueWorker] Processing 1 event(s) for move/archive/purge.
+2019-12-05 12:33:35,065 [INFO  : ExportResolver] ExportResolver worker resolver is already running at its maximum workload of 2 jobs.
+2019-12-05 12:33:35,127 [ERROR : DirectoryTransferController] Unable to delete location: /export$/153f45876938448393ea5b254c941789
+System.IO.IOException: The process cannot access the file 'tick25769486-tick25775476-video1.avi' because it is being used by another process.
+   at System.IO.Directory.DeleteHelper(String fullPath, String userPath, Boolean recursive, Boolean throwOnTopLevelDirectoryNotFound, WIN32_FIND_DATA& data)
+   at System.IO.Directory.Delete(String fullPath, String userPath, Boolean recursive, Boolean checkHost)
+   at WatchGuard.FileTransfer.TransferControllers.OnPremiseController.<>c__DisplayClass1_0.<DeleteAsync>b__0()
+2019-12-05 12:33:35,143 [ERROR : MoveQueueWorker] No storage locations were found for the current request.
+2019-12-05 12:33:35,143 [WARN  : MoveQueueWorker] No storage location available on Tier '0' to archive event 00:1d:96:01:f4:4d-8633549.
+2019-12-05 12:33:35,143 [WARN  : Task] TaskScheduler.UnobservedTaskException: System.Threading.Tasks.Task. Message:
+A Task's exception(s) were not observed either by Waiting on the Task or accessing its Exception property. As a result, the unobserved exception was rethrown by the finalizer thread.
+Exception: 1
+System.IO.IOException: The process cannot access the file 'tick25769486-tick25775476-video1.avi' because it is being used by another process.
+   at System.IO.Directory.DeleteHelper(String fullPath, String userPath, Boolean recursive, Boolean throwOnTopLevelDirectoryNotFound, WIN32_FIND_DATA& data)
+   at System.IO.Directory.Delete(String fullPath, String userPath, Boolean recursive, Boolean checkHost)
+   at WatchGuard.FileTransfer.TransferControllers.OnPremiseController.<>c__DisplayClass1_0.<DeleteAsync>b__0()
+   at System.Threading.Tasks.Task.Execute()
+
+2019-12-05 12:33:50,220 [INFO  : TranscodeResolver] TranscodeResolver worker resolver is already running at its maximum workload of 2 jobs.
+2019-12-05 12:33:50,314 [INFO  : MoveQueueWorker] Processing 1 event(s) for move/archive/purge.
+2019-12-05 12:33:50,361 [INFO  : ExportResolver] ExportResolver worker resolver is already running at its maximum workload of 2 jobs.
+2019-12-05 12:33:50,408 [ERROR : DirectoryTransferController] Unable to delete location: /export$/153f45876938448393ea5b254c941789
+System.IO.IOException: The process cannot access the file 'tick25769486-tick25775476-video1.avi' because it is being used by another process.
+   at System.IO.Directory.DeleteHelper(String fullPath, String userPath, Boolean recursive, Boolean throwOnTopLevelDirectoryNotFound, WIN32_FIND_DATA& data)
+   at System.IO.Directory.Delete(String fullPath, String userPath, Boolean recursive, Boolean checkHost)
+   at WatchGuard.FileTransfer.TransferControllers.OnPremiseController.<>c__DisplayClass1_0.<DeleteAsync>b__0()
+2019-12-05 12:33:50,423 [ERROR : MoveQueueWorker] No storage locations were found for the current request.
+2019-12-05 12:33:50,423 [WARN  : MoveQueueWorker] No storage location available on Tier '0' to archive event 00:1d:96:01:f4:4d-8633549.
+2019-12-05 12:33:50,689 [WARN  : Task] TaskScheduler.UnobservedTaskException: System.Threading.Tasks.Task. Message:
+A Task's exception(s) were not observed either by Waiting on the Task or accessing its Exception property. As a result, the unobserved exception was rethrown by the finalizer thread.
+Exception: 1
+System.IO.IOException: The process cannot access the file 'tick25769486-tick25775476-video1.avi' because it is being used by another process.
+   at System.IO.Directory.DeleteHelper(String fullPath, String userPath, Boolean recursive, Boolean throwOnTopLevelDirectoryNotFound, WIN32_FIND_DATA& data)
+   at System.IO.Directory.Delete(String fullPath, String userPath, Boolean recursive, Boolean checkHost)
+   at WatchGuard.FileTransfer.TransferControllers.OnPremiseController.<>c__DisplayClass1_0.<DeleteAsync>b__0()
+   at System.Threading.Tasks.Task.Execute()
+
+2019-12-05 12:33:50,767 [INFO  : SpanningExegesis] Spanning is not required for job 7b83f021f2cd4f748cff0c0082c25356.
+2019-12-05 12:33:51,736 [INFO  : ExportWorker] Completed worker 7b83f021-f2cd-4f74-8cff-0c0082c25356 ExportWorkflow  
+2019-12-05 12:34:05,501 [INFO  : TranscodeResolver] TranscodeResolver worker resolver is already running at its maximum workload of 2 jobs.
+2019-12-05 12:34:05,610 [INFO  : MoveQueueWorker] Processing 1 event(s) for move/archive/purge.
