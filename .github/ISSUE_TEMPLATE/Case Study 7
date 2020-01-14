@@ -1,0 +1,260 @@
+2018-10-02 09:38:19,058 DEBUG [17][UsbReader]  Checking if H:\ is a VISTA device
+2018-10-02 09:38:19,058 DEBUG [17][UsbReader]  Not a VISTA because WGV folder does not exist [H:\wgv]
+2018-10-02 09:38:19,058 DEBUG [17][DeviceProducer]  [H:\] Checking if H:\ is a 4RE events...
+2018-10-02 09:38:19,090 INFO  [13][ImportServiceBase]   ============= Searching for record events from: G:\wgv ============= 
+2018-10-02 09:38:19,197 DEBUG [13][ImportServiceBase]  Found recorded event file tick47679261-tick47679651.xml
+2018-10-02 09:38:19,362 INFO  [13][ImportServiceBase]  Processing recorded event 00:1d:96:00:91:ce-47677872
+2018-10-02 09:38:19,400 DEBUG [13][DvrImportService]  Found stream 1 file tick47679261-tick47679320-video1.ts
+2018-10-02 09:38:19,414 DEBUG [13][DvrImportService]  Found stream 1 file tick47679320-tick47679651-video1.ts
+2018-10-02 09:38:19,432 DEBUG [13][DvrImportService]  Found stream 2 file tick47679261-tick47679651-video2.ts
+2018-10-02 09:38:19,439 DEBUG [13][ImportServiceBase]  Found recorded event file tick47679771-tick47680243.xml
+2018-10-02 09:38:19,441 INFO  [13][ImportServiceBase]  Processing recorded event 00:1d:96:00:91:ce-47677873
+2018-10-02 09:38:19,444 DEBUG [13][DvrImportService]  Found stream 1 file tick47679771-tick47679976-video1.ts
+2018-10-02 09:38:19,452 DEBUG [13][DvrImportService]  Found stream 1 file tick47679976-tick47680243-video1.ts
+2018-10-02 09:38:19,461 DEBUG [13][DvrImportService]  Found stream 2 file tick47679771-tick47679796-video2.ts
+2018-10-02 09:38:19,468 DEBUG [13][DvrImportService]  Found stream 2 file tick47679796-tick47680243-video2.ts
+2018-10-02 09:38:19,475 DEBUG [13][ImportServiceBase]  Found recorded event file tick47780093-tick47780467.xml
+2018-10-02 09:38:19,477 INFO  [13][ImportServiceBase]  Processing recorded event 00:1d:96:00:91:ce-47774725
+2018-10-02 09:38:19,480 DEBUG [13][DvrImportService]  Found stream 1 file tick47780093-tick47780467-video1.ts
+2018-10-02 09:38:19,493 DEBUG [13][DvrImportService]  Found stream 2 file tick47780093-tick47780467-video2.ts
+2018-10-02 09:38:19,500 DEBUG [13][ImportServiceBase]  Found recorded event file tick47799106-tick47800294.xml
+2018-10-02 09:38:19,502 INFO  [13][ImportServiceBase]  Processing recorded event 00:1d:96:00:91:ce-47795608
+2018-10-02 09:38:19,506 DEBUG [13][DvrImportService]  Found stream 1 file tick47799106-tick47799199-video1.ts
+2018-10-02 09:38:19,516 DEBUG [13][DvrImportService]  Found stream 1 file tick47799199-tick47799854-video1.ts
+2018-10-02 09:38:19,529 DEBUG [13][DvrImportService]  Found stream 1 file tick47799854-tick47800294-video1.ts
+2018-10-02 09:38:19,541 DEBUG [13][DvrImportService]  Found stream 2 file tick47799106-tick47799106-video2.ts
+2018-10-02 09:38:19,552 DEBUG [13][DvrImportService]  Found stream 2 file tick47799106-tick47799761-video2.ts
+2018-10-02 09:38:19,565 DEBUG [13][DvrImportService]  Found stream 2 file tick47799761-tick47800294-video2.ts
+2018-10-02 09:38:19,574 DEBUG [13][ImportServiceBase]  Found recorded event file tick47866421-tick47866810.xml
+2018-10-02 09:38:19,576 INFO  [13][ImportServiceBase]  Processing recorded event 00:1d:96:00:91:ce-47842352
+2018-10-02 09:38:19,581 DEBUG [13][DvrImportService]  Found stream 1 file tick47866421-tick47866793-video1.ts
+2018-10-02 09:38:19,594 DEBUG [13][DvrImportService]  Found stream 1 file tick47866793-tick47866810-video1.ts
+2018-10-02 09:38:19,604 DEBUG [13][DvrImportService]  Found stream 2 file tick47866421-tick47866810-video2.ts
+2018-10-02 09:38:19,611 DEBUG [13][ImportServiceBase]  Found recorded event file tick47867004-tick47867351.xml
+2018-10-02 09:38:19,613 INFO  [13][ImportServiceBase]  Processing recorded event 00:1d:96:00:91:ce-47842353
+2018-10-02 09:38:19,617 DEBUG [13][DvrImportService]  Found stream 1 file tick47867004-tick47867351-video1.ts
+2018-10-02 09:38:19,647 DEBUG [13][DvrImportService]  Found stream 2 file tick47867004-tick47867351-video2.ts
+2018-10-02 09:38:19,653 DEBUG [13][ImportServiceBase]  Found recorded event file tick47886065-tick47886634.xml
+2018-10-02 09:38:19,655 INFO  [13][ImportServiceBase]  Processing recorded event 00:1d:96:00:91:ce-47885235
+2018-10-02 09:38:19,663 DEBUG [13][DvrImportService]  Found stream 1 file tick47886065-tick47886576-video1.ts
+2018-10-02 09:38:19,672 DEBUG [13][DvrImportService]  Found stream 1 file tick47886576-tick47886634-video1.ts
+2018-10-02 09:38:19,681 DEBUG [13][DvrImportService]  Found stream 2 file tick47886065-tick47886606-video2.ts
+2018-10-02 09:38:19,688 DEBUG [13][DvrImportService]  Found stream 2 file tick47886606-tick47886634-video2.ts
+2018-10-02 09:38:19,697 DEBUG [13][ImportServiceBase]  Found recorded event file tick47901176-tick47901480.xml
+2018-10-02 09:38:19,699 INFO  [13][ImportServiceBase]  Processing recorded event 00:1d:96:00:91:ce-47898393
+2018-10-02 09:38:19,702 DEBUG [13][DvrImportService]  Found stream 1 file tick47901176-tick47901241-video1.ts
+2018-10-02 09:38:19,715 DEBUG [13][DvrImportService]  Found stream 1 file tick47901241-tick47901480-video1.ts
+2018-10-02 09:38:19,725 DEBUG [13][DvrImportService]  Found stream 2 file tick47901176-tick47901275-video2.ts
+2018-10-02 09:38:19,733 DEBUG [13][DvrImportService]  Found stream 2 file tick47901275-tick47901480-video2.ts
+2018-10-02 09:38:19,740 DEBUG [13][ImportServiceBase]  Found recorded event file tick47927235-tick47927538.xml
+2018-10-02 09:38:19,743 INFO  [13][ImportServiceBase]  Processing recorded event 00:1d:96:00:91:ce-47926112
+2018-10-02 09:38:19,750 DEBUG [13][DvrImportService]  Found stream 1 file tick47927235-tick47927538-video1.ts
+2018-10-02 09:38:19,761 DEBUG [13][DvrImportService]  Found stream 2 file tick47927235-tick47927538-video2.ts
+2018-10-02 09:38:19,769 DEBUG [13][ImportServiceBase]  Found recorded event file tick47936413-tick47937377.xml
+2018-10-02 09:38:19,772 INFO  [13][ImportServiceBase]  Processing recorded event 00:1d:96:00:91:ce-47926113
+2018-10-02 09:38:19,786 DEBUG [13][DvrImportService]  Found stream 1 file tick47936413-tick47936913-video1.ts
+2018-10-02 09:38:19,794 DEBUG [13][DvrImportService]  Found stream 1 file tick47936913-tick47937377-video1.ts
+2018-10-02 09:38:19,804 DEBUG [13][DvrImportService]  Found stream 2 file tick47936413-tick47936996-video2.ts
+2018-10-02 09:38:19,816 DEBUG [13][DvrImportService]  Found stream 2 file tick47936996-tick47937377-video2.ts
+2018-10-02 09:38:19,824 DEBUG [13][ImportServiceBase]  Found recorded event file tick47938273-tick47938632.xml
+2018-10-02 09:38:19,826 INFO  [13][ImportServiceBase]  Processing recorded event 00:1d:96:00:91:ce-47926114
+2018-10-02 09:38:19,832 DEBUG [13][DvrImportService]  Found stream 1 file tick47938273-tick47938632-video1.ts
+2018-10-02 09:38:19,848 DEBUG [13][DvrImportService]  Found stream 2 file tick47938273-tick47938307-video2.ts
+2018-10-02 09:38:19,859 DEBUG [13][DvrImportService]  Found stream 2 file tick47938307-tick47938632-video2.ts
+2018-10-02 09:38:19,865 DEBUG [13][ImportServiceBase]  Found recorded event file tick47938620-tick47939880.xml
+2018-10-02 09:38:19,867 INFO  [13][ImportServiceBase]  Processing recorded event 00:1d:96:00:91:ce-47926115
+2018-10-02 09:38:19,870 DEBUG [13][DvrImportService]  Found stream 1 file tick47938620-tick47938884-video1.ts
+2018-10-02 09:38:19,884 DEBUG [13][DvrImportService]  Found stream 1 file tick47938884-tick47939540-video1.ts
+2018-10-02 09:38:19,893 DEBUG [13][DvrImportService]  Found stream 1 file tick47939540-tick47939880-video1.ts
+2018-10-02 09:38:19,901 DEBUG [13][DvrImportService]  Found stream 2 file tick47938620-tick47938962-video2.ts
+2018-10-02 09:38:19,931 DEBUG [13][DvrImportService]  Found stream 2 file tick47938962-tick47939617-video2.ts
+2018-10-02 09:38:19,938 DEBUG [13][DvrImportService]  Found stream 2 file tick47939617-tick47939880-video2.ts
+2018-10-02 09:38:20,039 INFO  [13][ImportServiceBase]  Found 12 importable recorded events.
+2018-10-02 09:38:20,039 INFO  [13][ImportServiceBase]   ============= Finished searching for record events from: G:\wgv ============= 
+2018-10-02 09:38:20,342 DEBUG [ 9][RecordedEventSearchService]  Completed search of recorded events with 25 results and 1066 total
+2018-10-02 09:38:20,342 DEBUG [ 9][RecordedEventSearchService]  Page 1 of 43
+2018-10-02 09:38:20,410 DEBUG [ 6][StorageDeviceService]  Getting Online Storage Locations
+2018-10-02 09:38:20,533 ERROR [ 7][ElxRecordedEventFileService]  [00:1d:96:00:91:ce-47589439] Failed to find the event root
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at WatchGuard.Elx.EvidenceManagement.GetRecordedEventResourceHandler.GetStorageRootPath(IFileSystemDriveRepository driveRepository, PathString dbPath, StorageLocationId storageId, Boolean isNetworkDrive)
+   at WatchGuard.Elx.EvidenceManagement.GetRecordedEventResourceHandler.GetEventRootPath(IDataContext context, IFileSystemDriveRepository driveRepository, Reid reid)
+   at WatchGuard.Elx.EvidenceManagement.ElxRecordedEventFileService.GetEventRoot(Reid reid)
+2018-10-02 09:38:20,553 ERROR [ 6][ElxRecordedEventFileService]  [00:1d:96:00:91:ce-47333326] Failed to find the event root
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at WatchGuard.Elx.EvidenceManagement.GetRecordedEventResourceHandler.GetStorageRootPath(IFileSystemDriveRepository driveRepository, PathString dbPath, StorageLocationId storageId, Boolean isNetworkDrive)
+   at WatchGuard.Elx.EvidenceManagement.GetRecordedEventResourceHandler.GetEventRootPath(IDataContext context, IFileSystemDriveRepository driveRepository, Reid reid)
+   at WatchGuard.Elx.EvidenceManagement.ElxRecordedEventFileService.GetEventRoot(Reid reid)
+2018-10-02 09:38:20,554 ERROR [ 8][ElxRecordedEventFileService]  [00:1d:96:00:91:ce-47567867] Failed to find the event root
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at WatchGuard.Elx.EvidenceManagement.GetRecordedEventResourceHandler.GetStorageRootPath(IFileSystemDriveRepository driveRepository, PathString dbPath, StorageLocationId storageId, Boolean isNetworkDrive)
+   at WatchGuard.Elx.EvidenceManagement.GetRecordedEventResourceHandler.GetEventRootPath(IDataContext context, IFileSystemDriveRepository driveRepository, Reid reid)
+   at WatchGuard.Elx.EvidenceManagement.ElxRecordedEventFileService.GetEventRoot(Reid reid)
+2018-10-02 09:38:20,570 ERROR [13][ElxRecordedEventFileService]  [00:1d:96:00:91:ce-47341520] Failed to find the event root
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at WatchGuard.Elx.EvidenceManagement.GetRecordedEventResourceHandler.GetStorageRootPath(IFileSystemDriveRepository driveRepository, PathString dbPath, StorageLocationId storageId, Boolean isNetworkDrive)
+   at WatchGuard.Elx.EvidenceManagement.GetRecordedEventResourceHandler.GetEventRootPath(IDataContext context, IFileSystemDriveRepository driveRepository, Reid reid)
+   at WatchGuard.Elx.EvidenceManagement.ElxRecordedEventFileService.GetEventRoot(Reid reid)
+2018-10-02 09:38:20,570 ERROR [ 8][ElxRecordedEventFileService]  [00:1d:96:00:91:ce-47305183] Failed to find the event root
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at WatchGuard.Elx.EvidenceManagement.GetRecordedEventResourceHandler.GetStorageRootPath(IFileSystemDriveRepository driveRepository, PathString dbPath, StorageLocationId storageId, Boolean isNetworkDrive)
+   at WatchGuard.Elx.EvidenceManagement.GetRecordedEventResourceHandler.GetEventRootPath(IDataContext context, IFileSystemDriveRepository driveRepository, Reid reid)
+   at WatchGuard.Elx.EvidenceManagement.ElxRecordedEventFileService.GetEventRoot(Reid reid)
+2018-10-02 09:38:20,578 ERROR [ 6][ElxRecordedEventFileService]  [00:1d:96:00:91:ce-47305184] Failed to find the event root
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at WatchGuard.Elx.EvidenceManagement.GetRecordedEventResourceHandler.GetStorageRootPath(IFileSystemDriveRepository driveRepository, PathString dbPath, StorageLocationId storageId, Boolean isNetworkDrive)
+   at WatchGuard.Elx.EvidenceManagement.GetRecordedEventResourceHandler.GetEventRootPath(IDataContext context, IFileSystemDriveRepository driveRepository, Reid reid)
+   at WatchGuard.Elx.EvidenceManagement.ElxRecordedEventFileService.GetEventRoot(Reid reid)
+2018-10-02 09:38:20,592 ERROR [ 7][ElxRecordedEventFileService]  [00:1d:96:00:91:ce-47305185] Failed to find the event root
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at WatchGuard.Elx.EvidenceManagement.GetRecordedEventResourceHandler.GetStorageRootPath(IFileSystemDriveRepository driveRepository, PathString dbPath, StorageLocationId storageId, Boolean isNetworkDrive)
+   at WatchGuard.Elx.EvidenceManagement.GetRecordedEventResourceHandler.GetEventRootPath(IDataContext context, IFileSystemDriveRepository driveRepository, Reid reid)
+   at WatchGuard.Elx.EvidenceManagement.ElxRecordedEventFileService.GetEventRoot(Reid reid)
+2018-10-02 09:38:20,685 ERROR [13][ElxRecordedEventFileService]  [00:1d:96:00:91:ce-47272969] Failed to find the event root
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at WatchGuard.Elx.EvidenceManagement.GetRecordedEventResourceHandler.GetStorageRootPath(IFileSystemDriveRepository driveRepository, PathString dbPath, StorageLocationId storageId, Boolean isNetworkDrive)
+   at WatchGuard.Elx.EvidenceManagement.GetRecordedEventResourceHandler.GetEventRootPath(IDataContext context, IFileSystemDriveRepository driveRepository, Reid reid)
+   at WatchGuard.Elx.EvidenceManagement.ElxRecordedEventFileService.GetEventRoot(Reid reid)
+2018-10-02 09:38:20,694 ERROR [ 6][ElxRecordedEventFileService]  [00:1d:96:00:91:ce-47272968] Failed to find the event root
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at WatchGuard.Elx.EvidenceManagement.GetRecordedEventResourceHandler.GetStorageRootPath(IFileSystemDriveRepository driveRepository, PathString dbPath, StorageLocationId storageId, Boolean isNetworkDrive)
+   at WatchGuard.Elx.EvidenceManagement.GetRecordedEventResourceHandler.GetEventRootPath(IDataContext context, IFileSystemDriveRepository driveRepository, Reid reid)
+   at WatchGuard.Elx.EvidenceManagement.ElxRecordedEventFileService.GetEventRoot(Reid reid)
+2018-10-02 09:38:20,702 ERROR [ 7][ElxRecordedEventFileService]  [00:1d:96:00:91:ce-47272970] Failed to find the event root
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at WatchGuard.Elx.EvidenceManagement.GetRecordedEventResourceHandler.GetStorageRootPath(IFileSystemDriveRepository driveRepository, PathString dbPath, StorageLocationId storageId, Boolean isNetworkDrive)
+   at WatchGuard.Elx.EvidenceManagement.GetRecordedEventResourceHandler.GetEventRootPath(IDataContext context, IFileSystemDriveRepository driveRepository, Reid reid)
+   at WatchGuard.Elx.EvidenceManagement.ElxRecordedEventFileService.GetEventRoot(Reid reid)
+2018-10-02 09:38:20,715 ERROR [13][ElxRecordedEventFileService]  [00:1d:96:00:91:ce-47272967] Failed to find the event root
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at WatchGuard.Elx.EvidenceManagement.GetRecordedEventResourceHandler.GetStorageRootPath(IFileSystemDriveRepository driveRepository, PathString dbPath, StorageLocationId storageId, Boolean isNetworkDrive)
+   at WatchGuard.Elx.EvidenceManagement.GetRecordedEventResourceHandler.GetEventRootPath(IDataContext context, IFileSystemDriveRepository driveRepository, Reid reid)
+   at WatchGuard.Elx.EvidenceManagement.ElxRecordedEventFileService.GetEventRoot(Reid reid)
+2018-10-02 09:38:20,734 ERROR [ 7][ElxRecordedEventFileService]  [00:1d:96:00:91:ce-47222903] Failed to find the event root
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at WatchGuard.Elx.EvidenceManagement.GetRecordedEventResourceHandler.GetStorageRootPath(IFileSystemDriveRepository driveRepository, PathString dbPath, StorageLocationId storageId, Boolean isNetworkDrive)
+   at WatchGuard.Elx.EvidenceManagement.GetRecordedEventResourceHandler.GetEventRootPath(IDataContext context, IFileSystemDriveRepository driveRepository, Reid reid)
+   at WatchGuard.Elx.EvidenceManagement.ElxRecordedEventFileService.GetEventRoot(Reid reid)
+2018-10-02 09:38:20,789 ERROR [ 8][ElxRecordedEventFileService]  [00:1d:96:00:91:ce-47305182] Failed to find the event root
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at WatchGuard.Elx.EvidenceManagement.GetRecordedEventResourceHandler.GetStorageRootPath(IFileSystemDriveRepository driveRepository, PathString dbPath, StorageLocationId storageId, Boolean isNetworkDrive)
+   at WatchGuard.Elx.EvidenceManagement.GetRecordedEventResourceHandler.GetEventRootPath(IDataContext context, IFileSystemDriveRepository driveRepository, Reid reid)
+   at WatchGuard.Elx.EvidenceManagement.ElxRecordedEventFileService.GetEventRoot(Reid reid)
+2018-10-02 09:38:20,801 ERROR [13][ElxRecordedEventFileService]  [00:1d:96:00:91:ce-47222902] Failed to find the event root
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at WatchGuard.Elx.EvidenceManagement.GetRecordedEventResourceHandler.GetStorageRootPath(IFileSystemDriveRepository driveRepository, PathString dbPath, StorageLocationId storageId, Boolean isNetworkDrive)
+   at WatchGuard.Elx.EvidenceManagement.GetRecordedEventResourceHandler.GetEventRootPath(IDataContext context, IFileSystemDriveRepository driveRepository, Reid reid)
+   at WatchGuard.Elx.EvidenceManagement.ElxRecordedEventFileService.GetEventRoot(Reid reid)
+2018-10-02 09:38:20,821 ERROR [13][ElxRecordedEventFileService]  [00:1d:96:00:91:ce-47222900] Failed to find the event root
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at WatchGuard.Elx.EvidenceManagement.GetRecordedEventResourceHandler.GetStorageRootPath(IFileSystemDriveRepository driveRepository, PathString dbPath, StorageLocationId storageId, Boolean isNetworkDrive)
+   at WatchGuard.Elx.EvidenceManagement.GetRecordedEventResourceHandler.GetEventRootPath(IDataContext context, IFileSystemDriveRepository driveRepository, Reid reid)
+   at WatchGuard.Elx.EvidenceManagement.ElxRecordedEventFileService.GetEventRoot(Reid reid)
+2018-10-02 09:38:20,839 ERROR [13][ElxRecordedEventFileService]  [00:1d:96:00:91:ce-47214607] Failed to find the event root
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at WatchGuard.Elx.EvidenceManagement.GetRecordedEventResourceHandler.GetStorageRootPath(IFileSystemDriveRepository driveRepository, PathString dbPath, StorageLocationId storageId, Boolean isNetworkDrive)
+   at WatchGuard.Elx.EvidenceManagement.GetRecordedEventResourceHandler.GetEventRootPath(IDataContext context, IFileSystemDriveRepository driveRepository, Reid reid)
+   at WatchGuard.Elx.EvidenceManagement.ElxRecordedEventFileService.GetEventRoot(Reid reid)
+2018-10-02 09:38:20,841 ERROR [ 7][ElxRecordedEventFileService]  [00:1d:96:00:91:ce-47222901] Failed to find the event root
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at WatchGuard.Elx.EvidenceManagement.GetRecordedEventResourceHandler.GetStorageRootPath(IFileSystemDriveRepository driveRepository, PathString dbPath, StorageLocationId storageId, Boolean isNetworkDrive)
+   at WatchGuard.Elx.EvidenceManagement.GetRecordedEventResourceHandler.GetEventRootPath(IDataContext context, IFileSystemDriveRepository driveRepository, Reid reid)
+   at WatchGuard.Elx.EvidenceManagement.ElxRecordedEventFileService.GetEventRoot(Reid reid)
+2018-10-02 09:38:20,870 ERROR [ 7][ElxRecordedEventFileService]  [00:1d:96:00:91:ce-47174081] Failed to find the event root
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at WatchGuard.Elx.EvidenceManagement.GetRecordedEventResourceHandler.GetStorageRootPath(IFileSystemDriveRepository driveRepository, PathString dbPath, StorageLocationId storageId, Boolean isNetworkDrive)
+   at WatchGuard.Elx.EvidenceManagement.GetRecordedEventResourceHandler.GetEventRootPath(IDataContext context, IFileSystemDriveRepository driveRepository, Reid reid)
+   at WatchGuard.Elx.EvidenceManagement.ElxRecordedEventFileService.GetEventRoot(Reid reid)
+2018-10-02 09:38:20,873 ERROR [13][ElxRecordedEventFileService]  [00:1d:96:00:91:ce-47174080] Failed to find the event root
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at WatchGuard.Elx.EvidenceManagement.GetRecordedEventResourceHandler.GetStorageRootPath(IFileSystemDriveRepository driveRepository, PathString dbPath, StorageLocationId storageId, Boolean isNetworkDrive)
+   at WatchGuard.Elx.EvidenceManagement.GetRecordedEventResourceHandler.GetEventRootPath(IDataContext context, IFileSystemDriveRepository driveRepository, Reid reid)
+   at WatchGuard.Elx.EvidenceManagement.ElxRecordedEventFileService.GetEventRoot(Reid reid)
+2018-10-02 09:38:20,886 ERROR [ 6][ElxRecordedEventFileService]  [00:1d:96:00:91:ce-47222904] Failed to find the event root
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at WatchGuard.Elx.EvidenceManagement.GetRecordedEventResourceHandler.GetStorageRootPath(IFileSystemDriveRepository driveRepository, PathString dbPath, StorageLocationId storageId, Boolean isNetworkDrive)
+   at WatchGuard.Elx.EvidenceManagement.GetRecordedEventResourceHandler.GetEventRootPath(IDataContext context, IFileSystemDriveRepository driveRepository, Reid reid)
+   at WatchGuard.Elx.EvidenceManagement.ElxRecordedEventFileService.GetEventRoot(Reid reid)
+2018-10-02 09:38:20,900 ERROR [ 6][ElxRecordedEventFileService]  [00:1d:96:00:91:ce-47174079] Failed to find the event root
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at WatchGuard.Elx.EvidenceManagement.GetRecordedEventResourceHandler.GetStorageRootPath(IFileSystemDriveRepository driveRepository, PathString dbPath, StorageLocationId storageId, Boolean isNetworkDrive)
+   at WatchGuard.Elx.EvidenceManagement.GetRecordedEventResourceHandler.GetEventRootPath(IDataContext context, IFileSystemDriveRepository driveRepository, Reid reid)
+   at WatchGuard.Elx.EvidenceManagement.ElxRecordedEventFileService.GetEventRoot(Reid reid)
+2018-10-02 09:38:20,921 ERROR [13][ElxRecordedEventFileService]  [00:1d:96:00:91:ce-47174078] Failed to find the event root
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at WatchGuard.Elx.EvidenceManagement.GetRecordedEventResourceHandler.GetStorageRootPath(IFileSystemDriveRepository driveRepository, PathString dbPath, StorageLocationId storageId, Boolean isNetworkDrive)
+   at WatchGuard.Elx.EvidenceManagement.GetRecordedEventResourceHandler.GetEventRootPath(IDataContext context, IFileSystemDriveRepository driveRepository, Reid reid)
+   at WatchGuard.Elx.EvidenceManagement.ElxRecordedEventFileService.GetEventRoot(Reid reid)
+2018-10-02 09:38:20,949 ERROR [ 6][ElxRecordedEventFileService]  [00:1d:96:00:91:ce-47174077] Failed to find the event root
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at WatchGuard.Elx.EvidenceManagement.GetRecordedEventResourceHandler.GetStorageRootPath(IFileSystemDriveRepository driveRepository, PathString dbPath, StorageLocationId storageId, Boolean isNetworkDrive)
+   at WatchGuard.Elx.EvidenceManagement.GetRecordedEventResourceHandler.GetEventRootPath(IDataContext context, IFileSystemDriveRepository driveRepository, Reid reid)
+   at WatchGuard.Elx.EvidenceManagement.ElxRecordedEventFileService.GetEventRoot(Reid reid)
+2018-10-02 09:38:20,949 ERROR [ 9][ElxRecordedEventFileService]  [00:1d:96:00:91:ce-47160054] Failed to find the event root
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at WatchGuard.Elx.EvidenceManagement.GetRecordedEventResourceHandler.GetStorageRootPath(IFileSystemDriveRepository driveRepository, PathString dbPath, StorageLocationId storageId, Boolean isNetworkDrive)
+   at WatchGuard.Elx.EvidenceManagement.GetRecordedEventResourceHandler.GetEventRootPath(IDataContext context, IFileSystemDriveRepository driveRepository, Reid reid)
+   at WatchGuard.Elx.EvidenceManagement.ElxRecordedEventFileService.GetEventRoot(Reid reid)
+2018-10-02 09:38:20,950 DEBUG [ 9][ModulusInterruptusStartupTask]  Showing interrupting dialog for Import Events Modal
+2018-10-02 09:38:20,961 ERROR [13][ElxRecordedEventFileService]  [00:1d:96:00:91:ce-47160055] Failed to find the event root
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at WatchGuard.Elx.EvidenceManagement.GetRecordedEventResourceHandler.GetStorageRootPath(IFileSystemDriveRepository driveRepository, PathString dbPath, StorageLocationId storageId, Boolean isNetworkDrive)
+   at WatchGuard.Elx.EvidenceManagement.GetRecordedEventResourceHandler.GetEventRootPath(IDataContext context, IFileSystemDriveRepository driveRepository, Reid reid)
+   at WatchGuard.Elx.EvidenceManagement.ElxRecordedEventFileService.GetEventRoot(Reid reid)
+2018-10-02 09:38:21,035 DEBUG [16][StorageDeviceService]  Getting Online Storage Locations
+2018-10-02 09:38:22,138 DEBUG [22][ImportWizardViewModel]  Total count 12
+2018-10-02 09:38:22,520 ERROR [Main][ElxRecordedEventFileService]  [00:1d:96:00:91:ce-47222903] Failed to find the event root
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at WatchGuard.Elx.EvidenceManagement.GetRecordedEventResourceHandler.GetStorageRootPath(IFileSystemDriveRepository driveRepository, PathString dbPath, StorageLocationId storageId, Boolean isNetworkDrive)
+   at WatchGuard.Elx.EvidenceManagement.GetRecordedEventResourceHandler.GetEventRootPath(IDataContext context, IFileSystemDriveRepository driveRepository, Reid reid)
+   at WatchGuard.Elx.EvidenceManagement.ElxRecordedEventFileService.GetEventRoot(Reid reid)
+2018-10-02 09:38:22,561 ERROR [Main][ElxRecordedEventFileService]  [00:1d:96:00:91:ce-47222902] Failed to find the event root
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at WatchGuard.Elx.EvidenceManagement.GetRecordedEventResourceHandler.GetStorageRootPath(IFileSystemDriveRepository driveRepository, PathString dbPath, StorageLocationId storageId, Boolean isNetworkDrive)
+   at WatchGuard.Elx.EvidenceManagement.GetRecordedEventResourceHandler.GetEventRootPath(IDataContext context, IFileSystemDriveRepository driveRepository, Reid reid)
+   at WatchGuard.Elx.EvidenceManagement.ElxRecordedEventFileService.GetEventRoot(Reid reid)
+2018-10-02 09:38:22,603 ERROR [Main][ElxRecordedEventFileService]  [00:1d:96:00:91:ce-47222901] Failed to find the event root
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at WatchGuard.Elx.EvidenceManagement.GetRecordedEventResourceHandler.GetStorageRootPath(IFileSystemDriveRepository driveRepository, PathString dbPath, StorageLocationId storageId, Boolean isNetworkDrive)
+   at WatchGuard.Elx.EvidenceManagement.GetRecordedEventResourceHandler.GetEventRootPath(IDataContext context, IFileSystemDriveRepository driveRepository, Reid reid)
+   at WatchGuard.Elx.EvidenceManagement.ElxRecordedEventFileService.GetEventRoot(Reid reid)
+2018-10-02 09:38:22,639 ERROR [Main][ElxRecordedEventFileService]  [00:1d:96:00:91:ce-47222900] Failed to find the event root
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at WatchGuard.Elx.EvidenceManagement.GetRecordedEventResourceHandler.GetStorageRootPath(IFileSystemDriveRepository driveRepository, PathString dbPath, StorageLocationId storageId, Boolean isNetworkDrive)
+   at WatchGuard.Elx.EvidenceManagement.GetRecordedEventResourceHandler.GetEventRootPath(IDataContext context, IFileSystemDriveRepository driveRepository, Reid reid)
+   at WatchGuard.Elx.EvidenceManagement.ElxRecordedEventFileService.GetEventRoot(Reid reid)
+2018-10-02 09:38:22,677 ERROR [Main][ElxRecordedEventFileService]  [00:1d:96:00:91:ce-47214607] Failed to find the event root
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at WatchGuard.Elx.EvidenceManagement.GetRecordedEventResourceHandler.GetStorageRootPath(IFileSystemDriveRepository driveRepository, PathString dbPath, StorageLocationId storageId, Boolean isNetworkDrive)
+   at WatchGuard.Elx.EvidenceManagement.GetRecordedEventResourceHandler.GetEventRootPath(IDataContext context, IFileSystemDriveRepository driveRepository, Reid reid)
+   at WatchGuard.Elx.EvidenceManagement.ElxRecordedEventFileService.GetEventRoot(Reid reid)
+2018-10-02 09:38:22,718 ERROR [Main][ElxRecordedEventFileService]  [00:1d:96:00:91:ce-47174081] Failed to find the event root
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at WatchGuard.Elx.EvidenceManagement.GetRecordedEventResourceHandler.GetStorageRootPath(IFileSystemDriveRepository driveRepository, PathString dbPath, StorageLocationId storageId, Boolean isNetworkDrive)
+   at WatchGuard.Elx.EvidenceManagement.GetRecordedEventResourceHandler.GetEventRootPath(IDataContext context, IFileSystemDriveRepository driveRepository, Reid reid)
+   at WatchGuard.Elx.EvidenceManagement.ElxRecordedEventFileService.GetEventRoot(Reid reid)
+2018-10-02 09:38:22,757 ERROR [Main][ElxRecordedEventFileService]  [00:1d:96:00:91:ce-47174080] Failed to find the event root
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at WatchGuard.Elx.EvidenceManagement.GetRecordedEventResourceHandler.GetStorageRootPath(IFileSystemDriveRepository driveRepository, PathString dbPath, StorageLocationId storageId, Boolean isNetworkDrive)
+   at WatchGuard.Elx.EvidenceManagement.GetRecordedEventResourceHandler.GetEventRootPath(IDataContext context, IFileSystemDriveRepository driveRepository, Reid reid)
+   at WatchGuard.Elx.EvidenceManagement.ElxRecordedEventFileService.GetEventRoot(Reid reid)
+2018-10-02 09:38:22,801 ERROR [Main][ElxRecordedEventFileService]  [00:1d:96:00:91:ce-47174079] Failed to find the event root
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at WatchGuard.Elx.EvidenceManagement.GetRecordedEventResourceHandler.GetStorageRootPath(IFileSystemDriveRepository driveRepository, PathString dbPath, StorageLocationId storageId, Boolean isNetworkDrive)
+   at WatchGuard.Elx.EvidenceManagement.GetRecordedEventResourceHandler.GetEventRootPath(IDataContext context, IFileSystemDriveRepository driveRepository, Reid reid)
+   at WatchGuard.Elx.EvidenceManagement.ElxRecordedEventFileService.GetEventRoot(Reid reid)
+2018-10-02 09:38:22,847 ERROR [Main][ElxRecordedEventFileService]  [00:1d:96:00:91:ce-47174078] Failed to find the event root
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at WatchGuard.Elx.EvidenceManagement.GetRecordedEventResourceHandler.GetStorageRootPath(IFileSystemDriveRepository driveRepository, PathString dbPath, StorageLocationId storageId, Boolean isNetworkDrive)
+   at WatchGuard.Elx.EvidenceManagement.GetRecordedEventResourceHandler.GetEventRootPath(IDataContext context, IFileSystemDriveRepository driveRepository, Reid reid)
+   at WatchGuard.Elx.EvidenceManagement.ElxRecordedEventFileService.GetEventRoot(Reid reid)
+2018-10-02 09:38:22,885 ERROR [Main][ElxRecordedEventFileService]  [00:1d:96:00:91:ce-47174077] Failed to find the event root
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at WatchGuard.Elx.EvidenceManagement.GetRecordedEventResourceHandler.GetStorageRootPath(IFileSystemDriveRepository driveRepository, PathString dbPath, StorageLocationId storageId, Boolean isNetworkDrive)
+   at WatchGuard.Elx.EvidenceManagement.GetRecordedEventResourceHandler.GetEventRootPath(IDataContext context, IFileSystemDriveRepository driveRepository, Reid reid)
+   at WatchGuard.Elx.EvidenceManagement.ElxRecordedEventFileService.GetEventRoot(Reid reid)
+2018-10-02 09:38:22,924 ERROR [Main][ElxRecordedEventFileService]  [00:1d:96:00:91:ce-47160055] Failed to find the event root
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at WatchGuard.Elx.EvidenceManagement.GetRecordedEventResourceHandler.GetStorageRootPath(IFileSystemDriveRepository driveRepository, PathString dbPath, StorageLocationId storageId, Boolean isNetworkDrive)
+   at WatchGuard.Elx.EvidenceManagement.GetRecordedEventResourceHandler.GetEventRootPath(IDataContext context, IFileSystemDriveRepository driveRepository, Reid reid)
+   at WatchGuard.Elx.EvidenceManagement.ElxRecordedEventFileService.GetEventRoot(Reid reid)
+2018-10-02 09:38:22,962 ERROR [Main][ElxRecordedEventFileService]  [00:1d:96:00:91:ce-47160054] Failed to find the event root
