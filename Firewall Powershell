@@ -1,0 +1,96 @@
+FIREWALL COMMANDS POWERSHELL
+9. February 2016 Jorn Walter Network comments offfor firewall commands powershell
+Create a new firewall rule:
+New-NetFirewallRule -DisplayName "Share Software X"
+
+Create a new firewall rule:
+New-NetFirewallRule -DisplayName "ICMP block" -Direction Inbound -Protocol icmp4 -Action Block
+
+Copy firewall rule:
+Copy-NetFirewallRule -DisplayName "Share Software X" -NewName "Allow Software X"
+
+Copy IPsec rule:
+Copy-NetIPsecRule -DisplayName "Share Software X" -NewName "Allow Software X"
+
+Delete firewall rule:
+Remove-NetFirewallRule -DisplayName "Share Software X"
+
+Display firewall profiles:
+Get-NetFirewallProfil
+
+View firewall rules for a specific profile:
+Get-NetFirewallProfile -Name Public | Get-NetFirewallRule
+
+Firewall rules show status:
+Get-NetFirewallRule -All
+
+Enable firewall rules to be active:
+Get-NetFirewallRule -Enabled True
+
+Display firewall rules that are active and allow traffic to pass:
+Get-NetFirewallRule -Enabled True -Action Allow
+
+Disable firewall rule:
+Disable-NetFirewallRule -DisplayName "Share Software X"
+
+Enable firewall rule:
+Enable-NetFirewallRule -DisplayName "Share Software X"
+
+Copy firewall profiles of the domain distributed via GPO:
+Get-NetFirewallProfile -Profile Domain -PolicyStore \ | Copy-NetFirewallRule -NewPolicyStore \
+
+Disable firewall rule of a specific GPO:
+Disable-NetFirewallRule -Direction Outbound -PolicyStore \
+
+Put firewall rules in a variable:
+$ Rules = Get-NetFirewallRule -PolicyStore ActiveStore -PolicyStoreSourceType Dynamic
+Disable firewall rules in the variable:
+Disable-NetFirewallRule -InputObject $ Rules
+Display firewall rules from the variable:
+Get-NetFirewallRule -PolicyStore ActiveStore -PolicyStoreSourceType Dynamic | Disable NetFirewallRule
+
+Enable firewall profiles including rules:
+Set-NetFirewallProfile -Profile Domain, Public, Private -Enabled True
+Set-NetFirewallProfile -All -Enabled "true"
+Set-NetFirewallProfile -Name Domain -Enabled "True"
+
+Control firewall profile behavior:
+Set-NetFirewallProfile -Name Domain -DefaultInboundAction Block
+Set-NetFirewallProfile -Name Domain -DefaultOutboundAction Block
+Set-NetFirewallProfile -Name Domain -DisabledInterfaceAliases Ethernet
+
+Firewall profile Connection Reset (default):
+Set-NetFirewallProfile -Name Domain -DisabledInterfaceAliases NotConfigured
+
+Firewall Display notification:
+Set-NetFirewallProfile -Name Domain -AllowUnicastResponseToMulticast false -NotifyOnListen false
+
+Firewall log files:
+Set-NetFirewallProfile -Name Domain -LogFileName "C: \ FWLOG \ domain.log"
+
+Firewall Log Files Size:
+Set-NetFirewallProfile -Name DomainLogMaxSizeKilobytes 10240
+
+Firewall Log Files Dropped and Successful:
+Set-NetFirewallProfile -Name DomainLogAllowed true -LogBlocked true
+
+Show all firewall commands:
+Get-Command-Modules Netsecurity
+
+All firewall rules include:
+Get-NetFirewallRule | measure
+
+Filtering Firewall Rules:
+Get-NetFirewallRule -Enabled true -Action block
+
+-------------------------
+
+New-NetFirewallRule -DisplayName "IE Block"
+Program "C: \ Program Files \ Internet Explorer \ iexplore.exe"
+Action block
+Profiles Domain, Private
+-DisplayName "IE Block" -Description "Demo"
+-Direction outbound
+
+Summary:
+New-NetFirewallRule -Program "C: \ Program Files \ Internet Explorer \ iexplore.exe" Action Block Profiles Domain, Private -DisplayName "IE Block" -Description "Demo" -Direction Outbound
